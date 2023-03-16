@@ -14,19 +14,45 @@
   <body>
     <h1 class = "col=12 d-flex justify-content-center bg-info text-white">Weather Man</h4>
     <div class="row">
-      <div class="search-bar col-4">
-        <div class="city-input">Search for a City:</div>
-        <div class="history"></div>
-      </div>
-      <div class="weather-view col-8">
-        <div class="current-weather"></div>
-        <div class="future-weather">
-          <div class="card-1">one</div>
-          <div class="card-2"></div>
-          <div class="card-3"></div>
-          <div class="card-4"></div>
-          <div class="card-5"></div>
+      <div class="search-bar col-2">
+        <div class="city-input h2" style = "border-bottom: 1px solid black">Search for a City:
+            <input class="form-control" placeholder="Enter City" style ="width: 100%; margin-top: 20px;">
+            <button class = "btn btn-primary" style ="width: 100%; margin-top: 20px; margin-bottom: 20px;">Search</button>
         </div>
+        <div class="history">
+            <!-- add buttons of history here -->
+        </div>
+      </div>
+      <div class="weather-view col-10">
+        <div class="current-weather" style = "border: 1px solid black;">
+            <div class="city h2" style="margin-bottom: 15px;">
+                Atlanta (9/13/2022)
+            </div>
+            <div class="temp h5" style="margin-bottom: 15px;">
+                Temp:
+            </div>
+            <div class="wind h5" style="margin-bottom: 15px;">
+                Wind:
+            </div>
+            <div class="humidity h5" style="margin-bottom: 15px;">
+                Humidity:
+            </div>
+        </div>
+        <div class = "h3"> 5-day Forecast:
+        <div class="future-weather row">
+          <div class="card-1 col-2 bg-secondary" style ="margin-right: 20px;">
+            <p>Date</p>
+            <p>icon</p>
+            <p>temp</p>
+            <p>wind</p>
+            <p>humidity</p>
+        </div>
+          <div class="card-2 col-2 bg-secondary" style ="margin-right: 20px;">two</div>
+          <div class="card-3 col-2 bg-secondary" style ="margin-right: 20px;">three</div>
+          <div class="card-4 col-2 bg-secondary" style ="margin-right: 20px;">four</div>
+          <div class="card-5 col-2 bg-secondary" style ="margin-right: 20px;">five</div>
+        </div>
+    </div>
       </div>
     </div>
   </body>
