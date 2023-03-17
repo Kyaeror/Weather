@@ -25,36 +25,57 @@
       </div>
       <div class="weather-view col-10">
         <div class="current-weather" style = "border: 1px solid black;">
-            <div class="city h2" style="margin-bottom: 15px;">
-                Atlanta (9/13/2022)
+            <div id="current-city" class="city h2" style="margin-bottom: 15px;">
+                City (Date)
             </div>
-            <div class="temp h5" style="margin-bottom: 15px;">
+            <img id="current-icon" src ="">
+            <div id="current-temp" class="h5" style="margin-bottom: 15px;">
                 Temp:
             </div>
-            <div class="wind h5" style="margin-bottom: 15px;">
+            <div id="current-wind" class="h5" style="margin-bottom: 15px;">
                 Wind:
             </div>
-            <div class="humidity h5" style="margin-bottom: 15px;">
+            <div id="current-humidity" class="h5" style="margin-bottom: 15px;">
                 Humidity:
             </div>
         </div>
-        <div class = "h3"> 5-day Forecast:
+        <div class = "h4"> 5-day Forecast:
         <div class="future-weather row">
-          <div class="card-1 col-2 bg-secondary" style ="margin-right: 20px;">
+          <div id="card-1" class="col-2 bg-secondary" style ="margin-right: 20px;">
             <p>Date</p>
-            <p>icon</p>
-            <p>temp</p>
-            <p>wind</p>
-            <p>humidity</p>
+            <p>Temp: </p>
+            <p>Wind: </p>
+            <p>Humidity: </p>
         </div>
-          <div class="card-2 col-2 bg-secondary" style ="margin-right: 20px;">two</div>
-          <div class="card-3 col-2 bg-secondary" style ="margin-right: 20px;">three</div>
-          <div class="card-4 col-2 bg-secondary" style ="margin-right: 20px;">four</div>
-          <div class="card-5 col-2 bg-secondary" style ="margin-right: 20px;">five</div>
+          <div id="card-2" class="col-2 bg-secondary" style ="margin-right: 20px;">
+            <p>Date</p>
+            <p>Temp: </p>
+            <p>Wind: </p>
+            <p>Humidity: </p>
+        </div>
+          <div id="card-3" class="col-2 bg-secondary" style ="margin-right: 20px;">
+            <p>Date</p>
+            <p>Temp: </p>
+            <p>Wind: </p>
+            <p>Humidity: </p>
+        </div>
+          <div id="card-4" class="col-2 bg-secondary" style ="margin-right: 20px;">
+            <p>Date</p>
+            <p>Temp: </p>
+            <p>Wind: </p>
+            <p>Humidity: </p>
+        </div>
+          <div id="card-5" class="col-2 bg-secondary" style ="margin-right: 20px;">
+            <p>Date</p>
+            <p>Temp: </p>
+            <p>Wind: </p>
+            <p>Humidity: </p>
+        </div>
         </div>
     </div>
       </div>
     </div>
+    <script src="./node_modules/moment/moment.js"></script>
     <script src="./Assets/js/script.js"></script>
   </body>
 </html>
