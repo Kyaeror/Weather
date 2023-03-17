@@ -7,4 +7,4 @@
 ![Screenshot of the WeatherMan](./Assets/pictures/WeatherMan.png)
 
 ## Deployed Application Link
-### 
+### https://kyaeror.github.io/Weather/
