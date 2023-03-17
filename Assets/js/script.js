@@ -12,11 +12,11 @@ const searchHistory = document.getElementById(`history`)
 searchBtn.addEventListener(`click` , translateAPI)
 function translateAPI() {
     //grabbing location information
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName.value}&limit=1&appid=${APIKey}`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityName.value}&limit=1&appid=${APIKey}`)
     .then(response => response.json())
     .then(function (data) { 
         //current weather
-        fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${data[0].lat}&lon=${data[0].lon}&appid=${APIKey}&units=metric`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${data[0].lat}&lon=${data[0].lon}&appid=${APIKey}&units=metric`)
         .then(response => response.json())
         //writes inner html could have done this better like i did the forecast one
         .then(function (data){
@@ -38,7 +38,7 @@ function translateAPI() {
             localStorage.setItem(`${data.name}`,`${data.name}`)
         })
         //forecast weather
-        fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${data[0].lat}&lon=${data[0].lon}&appid=${APIKey}&units=metric`)
+        fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${data[0].lat}&lon=${data[0].lon}&appid=${APIKey}&units=metric`)
         .then(response => response.json())
         .then(function (data){
             for(i=1; i < 6; i++){
